@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loops Exercise 2</h1>
+    <hr>
+    <script>
+        var out='';
+          for(var i=0;i<11;i++){
+            for (var j=0;j<11;j++){
+
+                 if(i==0 ||i==5 ||i==10){
+                    out+='*';
+                 }
+                
+                 if(i==1 || i==9){
+                    if(j==0 ||j==5 ||j==10){
+                        out+='*';
+                    }
+                    else{
+                        out+=' ';
+                    }
+                 }
+                 if(i==2 || i==8){
+                    if(j==0 ||j>=4 && j<=6 || j==10){
+                        out+='*';
+                    }
+                    else{
+                        out+=' ';
+                    }
+                
+                 }
+                 
+                 if(i==3 || i==7){
+                    if(j==0 ||j>=3 && j<=7 || j==10){
+                        out+='*';
+                    }
+                    else{
+                        out+=' ';
+                    }
+                 }
+                 if(i==4 || i==6){
+                    if(j==0 ||j>=2 && j<=8 || j==10){
+                        out+='*';
+                    }
+                    else{
+                        out+=' ';
+                    }
+                 }
+                
+                 
+
+
+            }
+            out+= '\n';
+          }
+          console.log(out);
+    </script>
+</body>
+</html>
